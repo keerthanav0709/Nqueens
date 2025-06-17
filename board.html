@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N×N Chessboard with N Queens</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+</head>
+<body>
+  <div class="container">
+    <h1>N×N Chessboard with N Queens</h1>
+    <div class="input-group">
+      <label for="boardSize">Enter N: </label>
+      <input type="number" id="boardSize" min="4" value="4">
+      <button onclick="generateChessboard()">Generate Chessboard</button>
+      <button onclick="submitSolution()">Submit</button>
+    </div>
+    <div id="chessboard" class="chessboard"></div>
+    <div id="message"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
